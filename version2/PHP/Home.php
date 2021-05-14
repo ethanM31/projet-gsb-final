@@ -1,0 +1,228 @@
+<?php
+session_start();
+include("./includes/db.php");
+
+if(isset($_SESSION['id'])){
+	$sql = "SELECT * FROM visiteur WHERE id='".$_SESSION['id']."'";
+    	$request = $connexion->query($sql);
+	$user_data = $request->fetchAll()[0];
+}
+
+?>
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- Standard Meta -->
+    <meta charset="utf-8">
+    <meta name="description" content="Premium HTML5 Template by Indonez">
+    <meta name="keywords" content="blockit, uikit3, indonez, handlebars, scss, vanilla javascript">
+    <meta name="author" content="Indonez">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#e9e8f0" />
+    <!-- Site Properties -->
+    <title>Home</title>
+    <!-- Critical preload -->
+    <link rel="preload" href="../JS/uikit.min.js" as="script">
+    <link rel="preload" href="../CSS/uikit.min.css" as="style">
+    <link rel="preload" href="../CSS/style.css" as="style">
+    <!-- Icon preload -->
+    <link rel="preload" href="../fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+    <!-- Font preload -->
+    <link rel="preload" href="../fonts/lato-v16-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/lato-v16-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/montserrat-v14-latin-600.woff2" as="font" type="font/woff2" crossorigin>
+    <!-- Favicon and apple icon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../CSS/uikit.min.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+    <!-- preloader begin -->
+    <div class="in-loader">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <!-- preloader end -->
+    <header>
+        <div class="uk-section uk-padding-remove-vertical">
+            <!-- module navigation begin -->
+                <div class="uk-container" data-uk-navbar>
+                    <div class="uk-navbar-left uk-width-auto">
+                        <div class="uk-navbar-item">
+                            <!-- module logo begin -->
+                        <div class="logo">
+                            <img src="../Images/logo.jpg" alt="logo"></img>
+                        </div>
+                            <!-- module logo begin -->
+                        </div>
+                    </div>
+                    <div class="uk-navbar-right uk-width-expand uk-flex uk-flex-right">
+                        <ul class="uk-navbar-nav uk-visible@m">
+                            <li><a href="index.php">Home</a></li>
+                            <li><a href="#">Entreprise<i class="fas fa-chevron-down"></i></a>
+                                <div class="uk-navbar-dropdown">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        <li><a href="about.php">A propos de GSB</a></li>
+                                        <li><a href="contact.php">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+			            <?php if(isset($_SESSION['id'])){
+				            echo '<div class="uk-navbar-item uk-visible@m in-optional-nav">
+                                <a href="#" class="uk-button uk-button-text">'.$user_data['nom'].' '.$user_data['prenom'].'</a>
+                            </div>';
+			            } else {
+				            echo'<div class="uk-navbar-item uk-visible@m in-optional-nav">
+                                        <a href="login.php" class="uk-button uk-button-text">Connexion</a>
+                                    </div>';
+			            } ?>
+                    </div>
+                </div>
+            </nav>
+            <!-- module navigation end -->
+        </div>
+        <!-- header content end -->
+    </header>
+    <main>
+        <!-- slideshow content begin -->
+        <div class="uk-section uk-padding-remove-vertical">
+            <div class="in-slideshow uk-visible-toggle" data-uk-slideshow>
+                <ul class="uk-slideshow-items">
+                    <li>
+                        <div class="uk-container">
+                            <div class="uk-grid" data-uk-grid>
+                                <div class="uk-width-1-2@m">
+                                    <div class="uk-overlay">
+                                        <h1>GSB <span class="in-highlight">Appli-Frais.</span></h1>
+                                        <p class="uk-text-lead uk-visible@m">Maintenant accéder à vos fiche de frais depuis internet</p>
+                                        <div class="in-slideshow-button">
+                                            <a href="#" class="uk-button uk-button-primary uk-border-rounded">Connexion</a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+        <!-- slideshow content end -->
+        <!-- section content begin -->
+        <div class="uk-section uk-section-muted in-padding-large-vertical@s in-profit-1">
+            <div class="uk-container">
+                <div class="uk-grid-divider" data-uk-grid>
+                    <div class="uk-width-expand@m in-margin-top-20@s">
+                        <h2>Why Profit Inc is a trusted FX broker</h2>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur sunt in anim culpa qui officia.</p>
+                    </div>
+                    <div class="uk-width-2-3@m">
+                        <div class="uk-child-width-1-2@s uk-child-width-1-2@m" data-uk-grid>
+                            <div class="uk-flex uk-flex-middle">
+                                <div class="uk-margin-right">
+                                    <img src="img/in-lazy.svg" data-src="img/in-profit-icon-1.svg" alt="profit-icon"
+                                        width="72" height="72" data-uk-img>
+                                </div>
+                                <div>
+                                    <p class="uk-text-bold">Wide Range of Trading Instruments</p>
+                                </div>
+                            </div>
+                            <div class="uk-flex uk-flex-middle">
+                                <div class="uk-margin-right">
+                                    <img src="img/in-lazy.svg" data-src="img/in-profit-icon-2.svg" alt="profit-icon"
+                                        width="72" height="72" data-uk-img>
+                                </div>
+                                <div>
+                                    <p class="uk-text-bold">Unparalleled Trading Conditions</p>
+                                </div>
+                            </div>
+                            <div class="uk-flex uk-flex-middle">
+                                <div class="uk-margin-right">
+                                    <img src="img/in-lazy.svg" data-src="img/in-profit-icon-3.svg" alt="profit-icon"
+                                        width="72" height="72" data-uk-img>
+                                </div>
+                                <div>
+                                    <p class="uk-text-bold">Globally Licensed &amp; Regulated</p>
+                                </div>
+                            </div>
+                            <div class="uk-flex uk-flex-middle">
+                                <div class="uk-margin-right">
+                                    <img src="img/in-lazy.svg" data-src="img/in-profit-icon-4.svg" alt="profit-icon"
+                                        width="72" height="72" data-uk-img>
+                                </div>
+                                <div>
+                                    <p class="uk-text-bold">Committed to Forex Education</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!-- footer content begin -->
+        <div class="uk-section uk-section-primary uk-padding-large uk-padding-remove-horizontal uk-margin-medium-top">
+            <div class="uk-container">
+                <div class="uk-child-width-1-2@s uk-child-width-1-5@m uk-flex" data-uk-grid>
+                    <div>
+                        <h4 class="uk-heading-bullet">Overview</h4>
+                        <ul class="uk-list uk-link-text">
+                            <li><a href="#">Stock indices</a></li>
+                            <li><a href="#">Commodities</a></li>
+                            <li><a href="#">Forex</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="uk-heading-bullet">Company</h4>
+                        <ul class="uk-list uk-link-text">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="uk-heading-bullet">Legal</h4>
+                        <ul class="uk-list uk-link-text">
+                            <li><a href="#">Terms &amp; Conditions</a></li>
+                            <li><a href="#">Privacy &amp; Policy</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="uk-visible@m">
+                        <h4 class="uk-heading-bullet">Support</h4>
+                        <ul class="uk-list uk-link-text">
+                            <li><a href="#">Documentation</a></li>
+                        </ul>
+                    </div>
+                    <div class="uk-flex-first uk-flex-last@m">
+                        <ul class="uk-list uk-link-text">
+                            <li><img class="uk-margin-small-bottom" src="img/in-lazy.svg" data-src="img/in-logo-2.svg"
+                                    alt="logo" width="130" height="36" data-uk-img></li>
+                            <li><a href="#"><i class="fas fa-envelope uk-margin-small-right"></i>info@profit.id</a></li>
+                            <li><a href="#"><i class="fas fa-map-marker-alt uk-margin-small-right"></i>Jakarta,
+                                    Indonesia</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer content end -->
+        <!-- module totop begin -->
+        <div class="uk-visible@m">
+            <a href="#" class="in-totop fas fa-chevron-up" data-uk-scroll></a>
+        </div>
+        <!-- module totop begin -->
+    </footer>
+    <!-- Javascript -->
+    <script src="../JS/uikit.min.js"></script>
+    <script src="../JS/indonez.min.js"></script>
+    <script src="../../../widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" defer></script>
+    <script src="../JS/config-theme.js"></script>
+</body>
+</html>

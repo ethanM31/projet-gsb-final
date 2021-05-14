@@ -1,0 +1,19 @@
+ALL* 	- Modifier les links 
+	- Couleurs du site en cohérence avec GSB 
+	- Re.Structurer les pages 
+	- Modifier/Ajouter des commentraires 
+	- Modifier les noms des ID/class/...
+
+
+Page Home	???
+
+Page Login 	- Mettre le logo GSB à la place de l'autre 
+
+Page Contact ???
+
+Page A propos de GSB - ???
+
+Page de Profil 	- Rien de fait encore
+
+Pages* des frais - Essayer de faire une requete php pour qu'ils puissent etre communiquer avce les clients etc..
+		
