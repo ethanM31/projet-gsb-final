@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 
 	<!-- Link -->
-	<link rel="stylesheet" type="text/css" href="validation-des-frais.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/StyleValidation-des-frais.css">
 
 </head>
 <body>

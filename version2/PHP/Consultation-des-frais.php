@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>GSB</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../CSS/style.css">
 
 </head>
 
@@ -108,7 +108,7 @@
                         </div>
                     </fieldset>
                 </form>
-                <script src="script.js"></script>
+                <script src="../JS/script.js"></script>
             </div>
         </div>
         </div>
@@ -116,7 +116,7 @@
 
     </html>
     <!-- partial -->
-    <script src="./script.js"></script>
+    <script src="../JS/script.js"></script>
 
 </body>
 

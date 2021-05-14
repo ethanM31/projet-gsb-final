@@ -1,6 +1,6 @@
 <?php
 session_start();
-include("./includes/db.php");
+include("db.php");
 
 if(isset($_SESSION['id'])){
 	$sql = "SELECT * FROM visiteur WHERE id='".$_SESSION['id']."'";
@@ -35,8 +35,8 @@ if(isset($_SESSION['id'])){
     <link rel="preload" href="../fonts/lato-v16-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../fonts/montserrat-v14-latin-600.woff2" as="font" type="font/woff2" crossorigin>
     <!-- Favicon and apple icon -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png">
+    <link rel="shortcut icon" href="../Images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" href="../Images/apple-touch-icon.png">
     <!-- Stylesheet -->
     <link rel="stylesheet" href="../CSS/uikit.min.css">
     <link rel="stylesheet" href="../CSS/style.css">
