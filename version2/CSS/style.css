@@ -139,7 +139,7 @@ header .uk-navbar-dropdown li {
 .in-mobile-nav .uk-button {
     font-size: 17px;
     padding: 2px 16px;
-    color: #463a5c;
+    color: #0066CC;
     background-color: transparent;
     box-shadow: inset 0px 0px 0px 1px #e3e3e3;
     border-radius: 6px;
@@ -225,7 +225,7 @@ header .uk-navbar-dropdown li {
 
 /* [ 5. footer ] */
 footer .uk-section-primary {
-    background-color: #463a5c;
+    background-color: #0066CC;
 }
 
 footer p,
@@ -249,7 +249,7 @@ footer .in-footer-warning h5 {
 }
 
 footer .in-footer-warning h5 span {
-    background-color: #463a5c;
+    background-color: #0066CC;
     padding-left: 8px;
     padding-right: 8px;
 }
@@ -708,7 +708,7 @@ footer .in-footer-socials i {
 }
 
 .in-pricing-1 .uk-card-header .uk-label {
-    background-color: #463a5c;
+    background-color: #0066CC;
 }
 
 .in-pricing-1 .uk-card-header .uk-card-badge {

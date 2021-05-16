@@ -1,6 +1,6 @@
 <?php
 session_start();
-include("./includes/db.php");
+include("db.php");
 
 if(isset($_POST['username']) && isset($_POST['password'])){
     $sql = "SELECT * FROM visiteur WHERE login='".htmlspecialchars($_POST['username'])."' AND mdp='".htmlspecialchars($_POST['password'])."'";
@@ -32,11 +32,11 @@ if(isset($_POST['username']) && isset($_POST['password'])){
     <meta name="theme-color" content="#e9e8f0" />
     <!-- Site Properties -->
     <title>Sign in - Profit HTML5 Template</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png">
+    <link rel="shortcut icon" href="../Images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" href="../Images/apple-touch-icon.png">
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="CSS/StyleLogin.css">
-    <link rel="stylesheet" href="CSS/StyleMain.css">
+    <link rel="stylesheet" href="../CSS/StyleLogin.css">
+    <link rel="stylesheet" href="../CSS/StyleMain.css">
 </head>
 
 <body>
@@ -53,17 +53,16 @@ if(isset($_POST['username']) && isset($_POST['password'])){
             <div class="uk-container uk-container-expand">
                 <div class="uk-grid" data-uk-height-viewport="expand: true">
                     <div class="uk-width-3-5@m uk-background-cover uk-background-center-right uk-visible@m uk-box-shadow-xlarge"
-                        style="background-image: url(./pic/banniere.jpg);">
+                        style="background-image: url(../Images/banniere.jpg);">
                     </div>
                     <div class="uk-width-expand@m uk-flex uk-flex-middle">
                         <div class="uk-grid uk-flex-center">
                             <div class="uk-width-3-5@m">
                                 <div class="in-padding-horizontal@s">
                                     <!-- module logo begin -->
-                                    <a class="uk-logo" href="index-2.html">
-                                        <img class="in-offset-top-10" src="./pic/logo.svg" data-src="./pic/logo.svg"
-                                            alt="logo" width="130" height="36" data-uk-img>
-                                    </a>
+                                    <div class="logo">
+                                        <img src="../Images/logo.jpg" alt="logo"></img>
+                                    </div>
                                     <!-- module logo begin -->
                                     <p class="uk-text-lead uk-margin-top uk-margin-remove-bottom">
 					<?php
@@ -103,8 +102,8 @@ if(isset($_POST['username']) && isset($_POST['password'])){
         <!-- section content end -->
     </main>
     <!-- Javascript -->
-    <script src="js/vendors/uikit.min.js"></script>
-    <script src="js/vendors/indonez.min.js"></script>
+    <script src="../JS/uikit.min.js"></script>
+    <script src="../JS/indonez.min.js"></script>
 </body>
 
 

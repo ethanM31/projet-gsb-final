@@ -11,7 +11,7 @@
 <body>
 	<center><img src="../Images/logo.jpg"></center>
 		<li>
-			<a class="lien" href="consultationdesfrais.html">Consultation de frais <--</a>
+			<a class="lien" href="Consultation-des-frais.php">Consultation de frais <--</a>
 		</li>
 		<h1 class="box"><center>Validation des frais par visiteur</center></h1>
 	<div class="conteneur">

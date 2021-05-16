@@ -24,7 +24,7 @@
         <center>
             <div class="container">
                 <a class="navbar-brand" href="#">
-                <img src="../Nouvelle version/logo-removebg-preview.png" alt="" width="40" height="34">
+                <img src="../Version2/Images/logo.jpg" alt="" width="40" height="34">
                 Gestion des Frais de Saisie
                 </a>
             </div>

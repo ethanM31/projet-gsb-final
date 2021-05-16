@@ -77,11 +77,23 @@ if(isset($_SESSION['id'])){
                         </ul>
 			            <?php if(isset($_SESSION['id'])){
 				            echo '<div class="uk-navbar-item uk-visible@m in-optional-nav">
-                                <a href="#" class="uk-button uk-button-text">'.$user_data['nom'].' '.$user_data['prenom'].'</a>
-                            </div>';
+                                <li><a href="#" class="uk-button uk-button-text">'.$user_data['nom'].' '.$user_data['prenom'].'</a></li>
+                            </div>
+                            <li><a href="deco.php" class="uk-button uk-button-text">Déconnexion</a></li>
+                                <ul class="uk-navbar-nav uk-visible@m">
+                                    <li><a href="#">Fiche<i class="fas fa-chevron-down"></i></a>
+                                        <div class="uk-navbar-dropdown">
+                                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                <li><a href="Saisie-fiche-de-frais.php">fiche de frais</a></li>
+                                                <li><a href="Consultation-des-frais.php">Consultation des frais</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            ';
 			            } else {
 				            echo'<div class="uk-navbar-item uk-visible@m in-optional-nav">
-                                        <a href="login.php" class="uk-button uk-button-text">Connexion</a>
+                                        <a href="Login.php" class="uk-button uk-button-text">Connexion</a>
                                     </div>';
 			            } ?>
                     </div>
@@ -100,12 +112,10 @@ if(isset($_SESSION['id'])){
                         <div class="uk-container">
                             <div class="uk-grid" data-uk-grid>
                                 <div class="uk-width-1-2@m">
-                                    <div class="uk-overlay">
+                                    <div class="uk-overlay in-padding-horizontal@s">
                                         <h1>GSB <span class="in-highlight">Appli-Frais.</span></h1>
                                         <p class="uk-text-lead uk-visible@m">Maintenant accéder à vos fiche de frais depuis internet</p>
-                                        <div class="in-slideshow-button">
-                                            <a href="#" class="uk-button uk-button-primary uk-border-rounded">Connexion</a>
-                                        </div>
+                                        <img src="../Images/medicament.jpg" alt="image"></img>
                                 </div>
                             </div>
                         </div>
@@ -117,9 +127,8 @@ if(isset($_SESSION['id'])){
             <div class="uk-container">
                 <div class="uk-grid-divider" data-uk-grid>
                     <div class="uk-width-expand@m in-margin-top-20@s">
-                        <h2>Why Profit Inc is a trusted FX broker</h2>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur sunt in anim culpa qui officia.</p>
+                        <h2>Un site crée pour nos visiteurs et pour nos comptables</h2>
+                        <p>Il suffit de vous connecter et vous accéderez a vos fiches de frais.</p>
                     </div>
                     <div class="uk-width-2-3@m">
                         <div class="uk-child-width-1-2@s uk-child-width-1-2@m" data-uk-grid>
@@ -129,7 +138,7 @@ if(isset($_SESSION['id'])){
                                         width="72" height="72" data-uk-img>
                                 </div>
                                 <div>
-                                    <p class="uk-text-bold">Wide Range of Trading Instruments</p>
+                                    <p class="uk-text-bold">Pour les visiteurs</p>
                                 </div>
                             </div>
                             <div class="uk-flex uk-flex-middle">
@@ -138,7 +147,7 @@ if(isset($_SESSION['id'])){
                                         width="72" height="72" data-uk-img>
                                 </div>
                                 <div>
-                                    <p class="uk-text-bold">Unparalleled Trading Conditions</p>
+                                    <p class="uk-text-bold">pour les comptables</p>
                                 </div>
                             </div>
                             <div class="uk-flex uk-flex-middle">
@@ -147,7 +156,7 @@ if(isset($_SESSION['id'])){
                                         width="72" height="72" data-uk-img>
                                 </div>
                                 <div>
-                                    <p class="uk-text-bold">Globally Licensed &amp; Regulated</p>
+                                    <p class="uk-text-bold">Inscriver vos fiches de frais et ayez la posibilité de les modifiers</p>
                                 </div>
                             </div>
                             <div class="uk-flex uk-flex-middle">
@@ -156,7 +165,7 @@ if(isset($_SESSION['id'])){
                                         width="72" height="72" data-uk-img>
                                 </div>
                                 <div>
-                                    <p class="uk-text-bold">Committed to Forex Education</p>
+                                    <p class="uk-text-bold">Validez et faite le suivie des differentes fiches de frais </p>
                                 </div>
                             </div>
                         </div>
@@ -169,45 +178,21 @@ if(isset($_SESSION['id'])){
         <!-- footer content begin -->
         <div class="uk-section uk-section-primary uk-padding-large uk-padding-remove-horizontal uk-margin-medium-top">
             <div class="uk-container">
-                <div class="uk-child-width-1-2@s uk-child-width-1-5@m uk-flex" data-uk-grid>
-                    <div>
-                        <h4 class="uk-heading-bullet">Overview</h4>
-                        <ul class="uk-list uk-link-text">
-                            <li><a href="#">Stock indices</a></li>
-                            <li><a href="#">Commodities</a></li>
-                            <li><a href="#">Forex</a></li>
-                        </ul>
+                <div class="uk-grid uk-flex uk-flex-center uk-margin-large-top" data-uk-grid>
+                    <div class="uk-width-5-6@m uk-margin-bottom">
+                        <div class="in-footer-warning in-margin-top-20@s">
+                            <h5 class="uk-text-small uk-text-uppercase"><span>Risk Warning</span></h5>
+                            <p class="uk-text-small">Voler des sites c'est pas super sympa /Stealing sites is not very nice </p>
+                        </div>
                     </div>
-                    <div>
-                        <h4 class="uk-heading-bullet">Company</h4>
-                        <ul class="uk-list uk-link-text">
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Careers</a></li>
-                        </ul>
+                    <div class="uk-width-1-2@m in-copyright-text">
+                        <p>© GSB Inc 2021. All rights reserved.</p>
                     </div>
-                    <div>
-                        <h4 class="uk-heading-bullet">Legal</h4>
-                        <ul class="uk-list uk-link-text">
-                            <li><a href="#">Terms &amp; Conditions</a></li>
-                            <li><a href="#">Privacy &amp; Policy</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="uk-visible@m">
-                        <h4 class="uk-heading-bullet">Support</h4>
-                        <ul class="uk-list uk-link-text">
-                            <li><a href="#">Documentation</a></li>
-                        </ul>
-                    </div>
-                    <div class="uk-flex-first uk-flex-last@m">
-                        <ul class="uk-list uk-link-text">
-                            <li><img class="uk-margin-small-bottom" src="img/in-lazy.svg" data-src="img/in-logo-2.svg"
-                                    alt="logo" width="130" height="36" data-uk-img></li>
-                            <li><a href="#"><i class="fas fa-envelope uk-margin-small-right"></i>info@profit.id</a></li>
-                            <li><a href="#"><i class="fas fa-map-marker-alt uk-margin-small-right"></i>Jakarta,
-                                    Indonesia</a></li>
-                        </ul>
+                    <div class="uk-width-1-2@m uk-text-right@m in-footer-socials">
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
             </div>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>GSB</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../version2/CSS/StyleConsultation-des-frais.css">
 
 </head>
 
@@ -22,7 +22,7 @@
         <div class="landing-page">
             <div class="form-appointment">
                 <div class="wpcf7" id="wpcf7-f560-p590-o1"></div>
-                <form method="get" action="script.js">
+                <form method="get" action="../version2/JS/script.js">
                     <fieldset>
                         <fieldset>
                             <legend>Période</legend>
@@ -108,7 +108,7 @@
                         </div>
                     </fieldset>
                 </form>
-                <script src="../JS/script.js"></script>
+                <script src="../version2/JS/script.js"></script>
             </div>
         </div>
         </div>
@@ -116,7 +116,7 @@
 
     </html>
     <!-- partial -->
-    <script src="../JS/script.js"></script>
+    <script src="../version2/JS/script.js"></script>
 
 </body>
 
