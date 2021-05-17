@@ -31,7 +31,7 @@ if(isset($_POST['username']) && isset($_POST['password'])){
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#e9e8f0" />
     <!-- Site Properties -->
-    <title>Sign in - Profit HTML5 Template</title>
+    <title>Connexion</title>
     <link rel="shortcut icon" href="../Images/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon-precomposed" href="../Images/apple-touch-icon.png">
     <!-- Stylesheet -->

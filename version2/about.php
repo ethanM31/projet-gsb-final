@@ -159,74 +159,26 @@ if(isset($_SESSION['id'])){
             <div class="uk-container">
                 <div class="uk-grid">
                     <div class="uk-width-1-1">
-                        <div class="uk-card uk-card-default uk-border-rounded uk-background-center uk-background-contain uk-background-image@m" style="background-image: url(../Images/in-team-background-1.png);" data-uk-parallax="bgy: -100">
+                        <div class="uk-card uk-card-default uk-border-rounded uk-align-center uk-width-auto">
                             <div class="uk-card-body">
                                 <div class="uk-grid uk-flex uk-flex-center">
                                     <div class="uk-width-3-4@m uk-text-center">
-                                        <h2>Trust the Professionals</h2>
-                                        <p>We are a group of passionate, independent thinkers who never stop exploring new ways to improve trading for the self-directed investor.</p>
-                                    </div>
-                                </div>
-                                <div class="uk-grid uk-child-width-1-2@m uk-margin-medium-top" data-uk-grid>
-                                    <div class="uk-flex uk-flex-left">
-                                        <div class="uk-margin-right">
-                                            <img class="uk-align-center " src="../Images/in-team-1.png" alt="image-team" width="300">
+                                        <h2>A propos de GSB</h2>
+                                        <div class="logo">
+                                            <img src="../Images/about.png" alt="logo" width="150"></img>
                                         </div>
-                                        <div>
-                                            <p class="uk-text-small uk-text-muted uk-text-uppercase uk-margin-remove-bottom">Chief Executive Officer</p>
-                                            <h4 class="uk-margin-small-top">Cynthia Dixon</h4>
-                                            <p>Nostrum exercitationem ullam corporis suscipit labor samnisi ute aliquid fugiat.</p>
-                                            <div>
-                                                <a class="uk-link-muted" href="#"><i class="fab fa-facebook-f uk-margin-small-right"></i></a>
-                                                <a class="uk-link-muted" href="#"><i class="fab fa-twitter uk-margin-small-right"></i></a>
-                                                <a class="uk-link-muted" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="uk-flex uk-flex-left">
-                                        <div class="uk-margin-right">
-                                            <img class="uk-align-center " src="../Images/in-team-2.png" alt="image-team" width="300">
-                                        </div>
-                                        <div>
-                                            <p class="uk-text-small uk-text-muted uk-text-uppercase uk-margin-remove-bottom">Executive Assistant</p>
-                                            <h4 class="uk-margin-small-top">Arthur Parker</h4>
-                                            <p>Nostrum exercitationem ullam corporis suscipit labor samnisi ute aliquid fugiat.</p>
-                                            <div>
-                                                <a class="uk-link-muted" href="#"><i class="fab fa-facebook-f uk-margin-small-right"></i></a>
-                                                <a class="uk-link-muted" href="#"><i class="fab fa-twitter uk-margin-small-right"></i></a>
-                                                <a class="uk-link-muted" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="uk-flex uk-flex-left">
-                                        <div class="uk-margin-right">
-                                            <img class="uk-align-center " src="../Images/in-team-3.png" alt="image-team" width="300">
-                                        </div>
-                                        <div>
-                                            <p class="uk-text-small uk-text-muted uk-text-uppercase uk-margin-remove-bottom">Marketing Specialist</p>
-                                            <h4 class="uk-margin-small-top">Evelyn Mason</h4>
-                                            <p>Nostrum exercitationem ullam corporis suscipit labor samnisi ute aliquid fugiat.</p>
-                                            <div>
-                                                <a class="uk-link-muted" href="#"><i class="fab fa-facebook-f uk-margin-small-right"></i></a>
-                                                <a class="uk-link-muted" href="#"><i class="fab fa-twitter uk-margin-small-right"></i></a>
-                                                <a class="uk-link-muted" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="uk-flex uk-flex-left">
-                                        <div class="uk-margin-right">
-                                            <img class="uk-align-center " src="../Images/in-team-4.png" alt="image-team" width="300">
-                                        </div>
-                                        <div>
-                                            <p class="uk-text-small uk-text-muted uk-text-uppercase uk-margin-remove-bottom">Human Resources</p>
-                                            <h4 class="uk-margin-small-top">Bryan Greene</h4>
-                                            <p>Nostrum exercitationem ullam corporis suscipit labor samnisi ute aliquid fugiat.</p>
-                                            <div>
-                                                <a class="uk-link-muted" href="#"><i class="fab fa-facebook-f uk-margin-small-right"></i></a>
-                                                <a class="uk-link-muted" href="#"><i class="fab fa-twitter uk-margin-small-right"></i></a>
-                                                <a class="uk-link-muted" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                            </div>
-                                        </div>
+                                        <p>Le laboratoire GSB est issu de la fusion entre le géant Américan Galaxy 
+                                            spécialisé dans le secteur des maladies virales dont le SIDA et les hépatites) et le conglomérat Européen Swiss Bourdin 
+                                            (travaillant sur des médicaments plus conventionnels), lui même déjà union de trois petits laboratoires. En 2012, les deux géants 
+                                            pharmaceutiques ont uni leurs forces pour créer un leader de ce secteur industriel. L'entité Galaxy Swiss Bourdin Europe a établi 
+                                            son siège administratif à Aurillac. Le siège social de la multinationale est situé à Philadelphie, Pennsylvanie, aux Etats-Unis. 
+                                            La fusion réalisée en 2012 a permis d'optimiser l'activité du groupe en réalisant des économies d'échelle dans la production et 
+                                            la distribution des médicaments. L'entreprise compte 480 visiteurs médicaux en France métropolitaine (Corse comprise) et 60 dans 
+                                            les départements et territoires d'outre-mer. Les territoires sont répartis en 6 secteurs géographiques 
+                                            (Paris-Centre, Sud, Nord, Ouest, Est, DTOM Caraïbes-Amériques, DTOM Asie-Afrique). Le laboratoire GSB est un spécialiste mondial
+                                            de l'étude clinique et un spécialiste national de la vente de médicaments en B2B avec les médecins et en C2B avec les clients
+                                            particuliers (future vente en ligne de médicaments).
+                                        </p>
                                     </div>
                                 </div>
                             </div>

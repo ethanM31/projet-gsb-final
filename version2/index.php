@@ -181,7 +181,7 @@ if(isset($_SESSION['id'])){
                 <div class="uk-grid uk-flex uk-flex-center uk-margin-large-top" data-uk-grid>
                     <div class="uk-width-5-6@m uk-margin-bottom">
                         <div class="in-footer-warning in-margin-top-20@s">
-                            <h5 class="uk-text-small uk-text-uppercase"><span>Risk Warning</span></h5>
+                            <h5 class="uk-text-small uk-text-uppercase"><span>Risques Warning</span></h5>
                             <p class="uk-text-small">Voler des sites c'est pas super sympa /Stealing sites is not very nice </p>
                         </div>
                     </div>
